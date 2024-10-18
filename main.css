@@ -1,17 +1,26 @@
 * {
     margin: 0;
-    border: 0;
+    padding: 0;
     box-sizing: border-box;
+    color: white;
 }
-/* background image */
-.bg{
+
+a {
+    text-decoration: none;
+    color: #4894FD;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bg {
     display: flex;
-    height: 100vh;
     position: absolute;
-    width: 100%;
     top: 0;
     left: 0;
-    /* z-index: -1; */
+    height: 100vh;
+    width: 100%;
 }
 
 .bg img{
@@ -20,57 +29,212 @@
     object-fit: cover;
 }
 
-/* black box */
-
 .container {
     position: relative;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 100vh;
     align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+
 }
-.box {
-    position: absolute;
-    top: 15vh;
+
+.box{
     background-color: #262626;
-    height: 70vh;
-    width: 93vh;
-    border-radius: .5%;
+    position: relative;
+    top: 14vh;
+    height: 550px;
+    width: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    text-align: center;
-    padding-top:20px ;
-    padding-bottom: 20px;
-    
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: .5%;   
 }
 
-.logo{
-    margin-bottom: 20px;
+.logo {
+    margin-top: 30px;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
 
-.logo img {
-    position: absolute;
-    top: 10vh;
-    width: 40%;
+.logo img{
+    width: 27%;
 }
 
 .text1 {
-    font-family: aria-label ;
-    position: relative;
+    font-weight: bolder;
     color: white;
+    font-size: 1rem;
+    text-align: center;
 }
 
-.login-form {
+.middle-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vh;
+}
+
+.text2 {
+    font-weight: lighter;
+    font-size: .9rem;
+    color: #B1B3B6;
+}
+
+.continue-box {
+    position: relative;
+    top: 4vh;
+    right: 2vh;
+}
+
+.continue-box1 {
+    padding: 16px 0px 0px;
+}
+
+.email-btn {
+    font-size: .9rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background: transparent;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.email-btn:hover,:focus {
+    background: rgba(157, 157, 157, 0.1);
+}
+
+.google-btn {
+    width: 40vh;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    background: #181818;
+    text-align: left;
+    border: 0px solid;
+    border-radius: 2px;
+}
+
+.google-btn:hover,:focus {
+    background: rgb(229, 229, 229);
+}
+
+.facebook-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    background: #181818;
+    border-radius: 2px;
+    text-align: left;
+}
+
+.facebook-btn:hover,:focus {
+    background: rgb(229, 229, 229);
+}
+
+.login-form{
+    border-left: 1px solid #393839 ;
+
+}
+
+.login-wrapper {
+    margin-left: 8px;
+}
+
+.login-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #393839;
+}
+.login-text-top {
     color: white;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+input, textarea {
+    background:#181818;
+    border: none;
+    width: 100%;
+    height: 4vh;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+input:focus {
+    background: none;
+    border: 1.5px solid #0065ff;
+    outline: none;
+}
+
+.email-box {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.pass-box {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    background: #0065ff;
+    border: none;
+    height: 35px;
+    margin: 8px;
+    padding: 0px 20px;
+    border-radius:20px;
+    font-weight: bold;
+    color: #ffffffd6;
+
+}
+
+.text3 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.login-bottom {
+    margin: 8px;
+    display: flex;
+
+}
+
+p, .forgot {
+    font-size: .85rem;
+    color: #B1B3B6;
+    font-weight: lighter;
+    margin-top: 16px;
+    margin-right: 7vh;
+}
+
+footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
+    position: relative;
+    top: 6vh;
+    width: 96vh;    
 }
 
+.language {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: .9rem;
+    border-top: 1px solid #393839;
+    border-bottom: 1px solid #393839;
+}
 
+.bottom {
+    margin-top: -10px;
+    padding-bottom: px;
+    color: #262626;
+    text-align: center;
+    font-weight: lighter;
+    font-size: .9rem;
+}

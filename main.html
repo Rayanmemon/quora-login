@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="quora.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="bg">
@@ -14,40 +15,51 @@
     <div class="container">
         <div class="box">
             <div class="logo">
-                <img src="quora_png-removebg-preview.png" alt="quora logo">
+                <img src="quora.png" alt="quora logo">
             </div>
             <div class="text1">
-                <p>A place to share knowledge and better understand the world</p>
+                <p class="text1">A place to share knowledge and better understand the world</p>
             </div>
-            <div class="login-form">
-                <h1>Login</h1>
-                <form action="">
-                    <div class="email-box">
-                        <input type="text" placeholder="Your email">
+            <div class="middle-box">
+                <div class="social continue-box">
+                    <h3 class="text2">By continuing you indicate that you agree to <br> Quora’s <a href="https://www.quora.com/about/tos">Terms of Service</a> and <a href="https://www.quora.com/about/privacy">Privacy Policy</a></h3>
+                    <div class="continue-box1"> 
+                        <div class="google-btn"><i class="fa-brands fa-google"></i>&nbsp&nbsp&nbsp Continue with Google</div>
+                        <div class="facebook-btn"><i class="fa-brands fa-facebook"></i>&nbsp&nbsp&nbspContinue with facebook</div>
+                        <div class="email-btn">Sign up with email</div>
                     </div>
-                    <div class="pass-box">
-                        <input type="text" placeholder="Your Password">
+                </div>
+                <div class="login-form one">
+                    <div class="login-wrapper"><div class="login-text"><h1 class="text3">Login</h1></div>
+                    <form action="">
+                        <p class="login-text-top">Email</p>
+                        <div class="email-box">
+                            <input type="text" required placeholder="Your email" minlength="6">
+                        </div>
+                        <p class="login-text-top">Password</p>
+                        <div class="pass-box">
+                            <input type="password" required placeholder="Your Password" minlength="6">
+                        </div>
+                    </form>
+                    <div class="login-bottom">
+                        <p class="Forgot">Forgot password?</p>
+                        <button class="btn" type="submit">
+                            Login   
+                        </button>   
                     </div>
-                    <p>Forgot password?</p>
-                    <button class="btn" type="submit">
-                        Login   
-                    </button>
-                </form>
-            </div>
-            <div class="social">
-                <h3>By continuing you indicate that you agree to Quora’s <a href="https://www.quora.com/about/tos">Terms of Service</a> and <a href="https://www.quora.com/about/privacy">Privacy Policy</a></h3>
-                <button class="google-btn" type="submit">Continue with Google</button>
-                <button class="facebook-btn" type="submit">Continue with facebook</button>
-                <button class="email-btn" type="submit">Sign up with email</button>
+                    </div>
+                </div>  
             </div>
             <!-- footer -->
             <footer>
+                
                 <div class="language">
                     <p>
-                        <a href="#">हिंदी</a>. <a href="#">मराठी</a>
+                    <a href="#">हिंदी > &nbsp &nbsp</a>  <a href="#">मराठी ></a>
                     </p> 
                 </div>
-                <div class="botton-pnl">
+                
+                <div class="bottom">
                     <p>
                         About · Careers · Privacy · Terms · Contact · Languages · Your Ad Choices · Press · © Quora, Inc. 2024
                     </p>
